@@ -1,0 +1,13 @@
+def simplify_fraction(numerator, denominator, result=None):
+    result = []
+    den = denominator
+    num = numerator
+    while denominator != 0:
+        temp = denominator
+        denominator = numerator%denominator
+        numerator = temp
+    result.append(num/numerator)
+    result.append(den/numerator)
+        
+        
+simplify_fraction(3,5)
