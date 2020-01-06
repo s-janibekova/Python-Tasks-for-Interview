@@ -1,0 +1,13 @@
+def count_numbers_factors(n):
+    # Write your code here
+    i = 1
+    count = 0
+    while i <= n:
+        if n%i == 0:
+            count+=1
+        i+=1
+    return count
+    
+
+
+count_numbers_factors(12)
